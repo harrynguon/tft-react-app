@@ -11,19 +11,31 @@ import rootReducer from './reducers/rootReducer';
 import axios from 'axios';
 import apiKey from './apiKey';
 
+// Object data structure:
+// {
+//     championData: {
+//         [
+//             champName : string,
+//             champData : array
+//         ],
+//         [...]
+//     }
+// }
+
 axios.get(`https://solomid-resources.s3.amazonaws.com/blitz/tft/data/champions.json?api_key=${apiKey}`)
-                            .then(res => {
-                                renderApp(res.data);
-                            })
-                            .catch(err => {
-                                console.log(err, "index.js");
-                                renderApp({});
-                            }
+        .then(res => {
+            // Grab each property and store inside a single array
+            renderApp({ championData: Object.entries(res.data) });
+        })
+        .catch(err => {
+            console.log(err, 'index.js');
+            renderApp({ championData: [] });
+        }
 );
 
 const renderApp = (initialReducerState) => {
     const store = createStore(rootReducer, initialReducerState);
-    console.log(store.getState());
+    console.log(store.getState(), 'index.js');
     ReactDOM.render(
         <Provider store={store}>
             <App />

@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import ChampionTable from './ChampionTable';
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="container home">
         <div className="row center">
@@ -15,18 +17,17 @@ const Home = () => {
             <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
                 porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
-            <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
-                porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
-            <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
-                porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
-            <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
-                porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
+                
+            <ChampionTable championData={props.championData} />
         </div>
     </div>
   );
 }
 
-export default Home;
+const mapStateToProps = (reducer) => {
+    return {
+        championData: reducer.championData
+    };
+}
+
+export default connect(mapStateToProps)(Home);
