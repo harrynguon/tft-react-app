@@ -8,22 +8,50 @@ class ChampionTable extends React.Component {
         // Create state for manipulating the table data via sorting
         this.state = {
             ascChampion: true,
+            ascOrigins: true,
+            ascClasses: true,
             championData: props.championData
         };
     }
 
     // Currying to pass parameters through without calling the function in onClick()
-    sortTable = () => {
+    sortTable = (field) => () => {
         // Clone the data before working on it
-        let sortedData = this.state.championData.slice();
-        sortedData.sort();
-        if (this.state.ascChampion) {
-            sortedData.reverse();
+        let dataCopy = this.state.championData.slice();
+        switch (field) {
+            case 'champions': 
+                dataCopy.sort();
+                if (this.state.ascChampion) {
+                    dataCopy.reverse();
+                }
+                this.setState({
+                    ascChampion: this.state.ascChampion ? false : true,
+                    championData: dataCopy
+                });
+                break;
+            case 'origins': 
+                dataCopy.sort((a, b) => a[1].origin[0].localeCompare(b[1].origin[0]));
+                if (this.state.ascOrigins) {
+                    dataCopy.reverse();
+                }
+                this.setState({
+                    ascOrigins: this.state.ascOrigins ? false : true,
+                    championData: dataCopy
+                });
+                break;
+            case 'classes': 
+                dataCopy.sort((a, b) => a[1].class[0].localeCompare(b[1].class[0]));
+                if (this.state.ascClasses) {
+                    dataCopy.reverse();
+                }
+                this.setState({
+                    ascClasses: this.state.ascClasses ? false : true,
+                    championData: dataCopy
+                });
+                break;
+            default: 
+                return;
         }
-        this.setState({
-            ascChampion: this.state.ascChampion ? false : true,
-            championData: sortedData
-        });
     }
 
     render() {
@@ -31,9 +59,9 @@ class ChampionTable extends React.Component {
             <table className="highlight">
                 <thead>
                     <tr>
-                        <th className="rowChampion" onClick={this.sortTable}>Champion</th>
-                        <th>Origin</th>
-                        <th>Class</th>
+                        <th className="rowTableActive" onClick={this.sortTable('champions')}>Champion</th>
+                        <th className="rowTableActive" onClick={this.sortTable('origins')}>Origin</th>
+                        <th className="rowTableActive" onClick={this.sortTable('classes')}>Class</th>
                     </tr>
                 </thead>
 
