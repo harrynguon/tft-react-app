@@ -1,0 +1,18 @@
+https://marketplace.visualstudio.com/items?itemName=dmeenhuis.es7-react-js-snippets-with-semicolons
+
+imp -> import moduleName from 'module'
+imd -> import { destructuredModule } from 'module'
+imr -> import React from 'react'
+exp -> export default moduleName
+
+cp  -> const { } = this.props
+ssf -> this.setState((state, props) => return { })
+clg -> 	console.log(object)
+
+[rafc] 
+    ->
+import React from 'react'
+
+const $1 = () => {
+  return <div>$0</div>
+}
