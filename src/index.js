@@ -16,21 +16,24 @@ import apiKey from './apiKey';
 //     championData: {
 //         [
 //             champName : string,
-//             champData : array
+//             champData : [
+//                 name : ...
+//                 key : ...
+//             ]
 //         ],
 //         [...]
 //     }
 // }
 
 axios.get(`https://solomid-resources.s3.amazonaws.com/blitz/tft/data/champions.json?api_key=${apiKey}`)
-        .then(res => {
-            // Grab each property and store inside a single array
-            renderApp({ championData: Object.entries(res.data) });
-        })
-        .catch(err => {
-            console.log(err, 'index.js');
-            renderApp({ championData: [] });
-        }
+    .then(res => {
+        // Grab each property and store inside a single array
+        renderApp({ championData: Object.entries(res.data) });
+    })
+    .catch(err => {
+        console.log(err, 'index.js');
+        renderApp({ championData: [] });
+    }
 );
 
 const renderApp = (initialReducerState) => {
