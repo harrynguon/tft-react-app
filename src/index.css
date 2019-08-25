@@ -19,3 +19,8 @@ code {
 .rowTableActive {
   cursor: pointer;
 }
+
+.scrollableTable {
+  height: 300px;
+  overflow: auto;
+}

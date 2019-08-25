@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 const NavBar = (props) => {
     return (
         <nav className="nav-extended">
-            <div className="nav-wrapper black">
+            <div className="nav-wrapper grey darken-4">
                 <div className="container">
                     <Link to="/" className="brand-logo center hide-on-small-only">Teamfight Tactics Data App</Link> 
                     <Link to="/" className="brand-logo center hide-on-med-and-up">TFT Data App</Link> 

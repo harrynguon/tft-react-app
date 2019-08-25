@@ -4,21 +4,23 @@ import ChampionTable from './ChampionTable';
 
 const Home = (props) => {
     return (
-        <div className="container home">
+        <div className="container">
             <div className="row center">
-                <h1 className="row teal-text center">
+                <h1 className="row grey-text center">
                     Hello!
                 </h1>
             </div>
             <div className="row center">
-                <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
-                    porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
-                <p className="flow-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus temporibus dolorum voluptates assumenda qui magnam ea harum eum illo laborum
-                    porro deleniti rem tempore, ipsum nihil fugiat quod odio squos?</p>
-                    
-                <ChampionTable championData={props.championData} />
+                <p className="flow-text">This is a basic Teamfight Tactics Web App that displays 
+                data for all champions. Below is the table of champions:</p>
+            </div>
+            <div className="row center">
+                <div className="hide-on-med-and-up scrollableTable">
+                    <ChampionTable championData={props.championData} />
+                </div>
+                <div className="hide-on-small-only">
+                    <ChampionTable championData={props.championData} />
+                </div>
             </div>
         </div>
     );
