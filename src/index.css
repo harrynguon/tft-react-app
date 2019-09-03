@@ -12,15 +12,11 @@ code {
     monospace;
 }
 
-/* .App .navbarFixed {
-  position: fixed;
-} */
-
 .rowTableActive {
   cursor: pointer;
 }
 
 .scrollableTable {
-  height: 300px;
+  height: 500px;
   overflow: auto;
 }

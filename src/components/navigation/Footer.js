@@ -2,31 +2,50 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="page-footer grey darken-3">
-        <div className="container">
-            <div className="row">
-                <div className="col l6 s12">
-                    <h5 className="white-text">Footer Content</h5>
-                    <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                </div>
-                <div className="col l4 offset-l2 s12">
-                    <h5 className="white-text">Links</h5>
-                    <ul>
-                        <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <div className="footer-copyright grey darken-4">
-                <div className="container">
-                Copyright © 2019 Harry Nguon
-                <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+    // <footer className="page-footer grey darken-3">
+    //     <div className="container">
+    //         <div className="row">
+    //                 <div>
+    //                 <p className="grey-text text-lighten-4 left">All data is pulled from the Riot Games API. A valid internet connection is required.</p>
+    //                 </div>
+    //         </div>
+    //     </div>
+    //     <div className="footer-copyright grey darken-4">
+    //         <div className="container">
+    //         <p className="left">Copyright © 2019 Harry Nguon</p>
+    //         <p className="right">All data is pulled from the Riot Games API. A valid internet connection is required.</p>
+    //         </div>
+    //     </div>
+    // </footer>
+
+
+    <footer className="grey">
+        <div className="container section">
+            <div className="center grey-text text-lighten-4">
+                All data is pulled from the Riot Games API. A valid internet connection is required.
+                
             </div>
         </div>
+        <div className="section grey darken-1 no-padding">
+        <div className="center grey-text text-lighten-2">Copyright © 2019 Harry Nguon</div>
+        </div>
+        
     </footer>
+
+
+    // <footer className="page-footer grey no-padding">
+    //     {/** Footer requires two components in the framework, so colour both the same colour as only using one */}
+    //     <div className="footer-copyright grey">
+    //         <div className="container">
+    //                 <div className="col l6">
+    //                     <p className="left">All data is pulled from the Riot Games API. A valid internet connection is required.</p>
+    //                 </div>
+    //                 <div className="col l6">
+    //                     <p className="right">Copyright © 2019 Harry Nguon</p>
+    //                 </div> 
+    //         </div>
+    //     </div>
+    // </footer>
   );
 }
 

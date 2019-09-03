@@ -3,7 +3,9 @@
 - add a separate page system for each champion that is clicked on
  -> grab the data pulled from the API
  -> output the data on the pages
--------------------------------------------------------------------------
  -> readable format
+	DONE
+-------------------------------------------------------------------------
 - reorganise footer; remove filler content and only show what is needed
 - if there's time, create a page system for origins and classes which may show the champions in those origins/classes
+	NOT DONE

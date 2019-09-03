@@ -70,7 +70,9 @@ const ChampionInfo = (props) => {
                         <div className="card-content white-text">
                             <span className="card-title"><b>Ability</b></span>
                             <p>Name: { champion.ability.name }</p>
-                            Description: <blockquote>{ champion.ability.description }</blockquote>
+                            Description:    <blockquote>
+                                                { champion.ability.description }
+                                            </blockquote>
                             <p>Type: { champion.ability.type }</p>
                             <p>Mana Cost: { champion.ability.manaCost }</p>
                             <p>Mana Start: { champion.ability.manaStart }</p>
