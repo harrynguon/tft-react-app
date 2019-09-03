@@ -2,7 +2,8 @@
 - connect the pages with the navigation/path display under the navbar
 - add a separate page system for each champion that is clicked on
  -> grab the data pulled from the API
+ -> output the data on the pages
 -------------------------------------------------------------------------
- -> output the data on the pages with a readable format
+ -> readable format
 - reorganise footer; remove filler content and only show what is needed
 - if there's time, create a page system for origins and classes which may show the champions in those origins/classes

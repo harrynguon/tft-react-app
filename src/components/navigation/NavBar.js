@@ -14,7 +14,7 @@ const NavBar = (props) => {
             <div className="nav-content grey">
                 { /** Check to see if URL contains champion or not */ }
                 <div>
-                    <Link to="/" > Home </Link>
+                    <Link to="/" className="breadcrumb"> Home </Link>
                     { getChampName(props.location.pathname, props.location.pathname.indexOf('/champion') > -1) }
                 </div>
             </div>
@@ -28,7 +28,7 @@ const getChampName = (url, championInUrl) => {
     }
     const urlAsArray = url.split('/');
     const champName = urlAsArray[urlAsArray.length - 1];
-    return ' -> ' + champName 
+    return <Link to={`/champion/${champName}`} className="breadcrumb">{ champName }</Link> 
 ;}
 
 
