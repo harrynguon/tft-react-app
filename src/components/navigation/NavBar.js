@@ -13,7 +13,7 @@ const NavBar = (props) => {
             </div>
             <div className="nav-content grey">
                 { /** Check to see if URL contains champion or not */ }
-                <div>
+                <div className="center">
                     <Link to="/" className="breadcrumb"> Home </Link>
                     { getChampName(props.location.pathname, props.location.pathname.indexOf('/champion') > -1) }
                 </div>

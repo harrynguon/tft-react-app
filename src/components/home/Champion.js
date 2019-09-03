@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Champion = (props) => {
     const champion = props.champion;
     return (
-        <tr>
+        <tr >
             <td>
                 <Link to={`/champion/${champion.name}`} key={champion.id} >
                         { champion.name }

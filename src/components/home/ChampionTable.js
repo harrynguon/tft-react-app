@@ -57,7 +57,7 @@ class ChampionTable extends React.Component {
     render() {
         return (
             <div className="container">
-                <table className="highlight">
+                <table className="highlight centered">
                     <thead>
                         <tr>
                             <th className="rowTableActive" onClick={this.sortTable('champions')}>Champion</th>
