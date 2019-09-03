@@ -13,7 +13,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/champion/:champID" component={ChampionInfo} />
+          <Route path="/champion/:champName" component={ChampionInfo} />
         </Switch>
         <Footer />
       </div>

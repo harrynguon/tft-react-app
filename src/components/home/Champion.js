@@ -6,7 +6,7 @@ const Champion = (props) => {
     return (
         <tr>
             <td>
-                <Link to={`/champion/${champion.id}`} key={champion.id} >
+                <Link to={`/champion/${champion.name}`} key={champion.id} >
                         { champion.name }
                 </Link>
             </td>

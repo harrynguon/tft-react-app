@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 const NavBar = (props) => {
+    console.log(props, 'navbarjs');
     return (
         <nav className="nav-extended">
             <div className="nav-wrapper grey darken-4">
@@ -11,11 +12,25 @@ const NavBar = (props) => {
                 </div>
             </div>
             <div className="nav-content grey">
-                <div>{ props.match.url === '/' ? 'Home' : 'Other' }</div>
+                { /** Check to see if URL contains champion or not */ }
+                <div>
+                    <Link to="/" > Home </Link>
+                    { getChampName(props.location.pathname, props.location.pathname.indexOf('/champion') > -1) }
+                </div>
             </div>
         </nav>
     );
 }
+
+const getChampName = (url, championInUrl) => {
+    if (!championInUrl) {
+        return '';
+    }
+    const urlAsArray = url.split('/');
+    const champName = urlAsArray[urlAsArray.length - 1];
+    return ' -> ' + champName 
+;}
+
 
 // Pass props to NavBar
 export default withRouter(NavBar);

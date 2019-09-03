@@ -3,20 +3,28 @@ import { connect } from 'react-redux';
 
 const ChampionInfo = (props) => {
     const champion = props.champion;
-    console.log(champion);
+    // ability
+    // class
+    // cost
+    // id
+    // items
+    // key
+    // name
+    // origin
+    // stats
     return (
-        <div>
-            <p>{champion.name}</p>
+        <div className="container">
+            <h5>{ champion.name }</h5>
         </div>
     );
 }
 
 const mapStateToProps = (reducer, ownProps) => {
-    // Grab ':champID' from router
-    const id = ownProps.match.params.champID;
+    // Grab ':champName' from router
+    const name = ownProps.match.params.champName;
     // Grab the champion from the store
     const champion = reducer.championData
-                            .filter(champData => champData[1].id === id);
+                            .filter(champData => champData[1].name === name);
     // Grab the array of the champion with all the actual data in it
     // It returns an array of an array, hence get the first element
     return {
