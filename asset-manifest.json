@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tft-react-app/static/css/main.2f78b3a0.chunk.css",
+    "main.js": "/tft-react-app/static/js/main.93183c6d.chunk.js",
+    "main.js.map": "/tft-react-app/static/js/main.93183c6d.chunk.js.map",
+    "runtime~main.js": "/tft-react-app/static/js/runtime~main.98dd4a49.js",
+    "runtime~main.js.map": "/tft-react-app/static/js/runtime~main.98dd4a49.js.map",
+    "static/js/2.76effcee.chunk.js": "/tft-react-app/static/js/2.76effcee.chunk.js",
+    "static/js/2.76effcee.chunk.js.map": "/tft-react-app/static/js/2.76effcee.chunk.js.map",
+    "index.html": "/tft-react-app/index.html",
+    "precache-manifest.72e90bd17f610c84bac317b0e809cd39.js": "/tft-react-app/precache-manifest.72e90bd17f610c84bac317b0e809cd39.js",
+    "service-worker.js": "/tft-react-app/service-worker.js",
+    "static/css/main.2f78b3a0.chunk.css.map": "/tft-react-app/static/css/main.2f78b3a0.chunk.css.map"
+  }
+}
