@@ -1,4 +1,5 @@
 make each champion in the table clickable
+
 add a separate page system for each champion that is clicked on
  -> grab the data pulled from the API
  -> output the data on the pages with a readable format

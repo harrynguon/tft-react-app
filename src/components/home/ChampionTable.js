@@ -56,21 +56,23 @@ class ChampionTable extends React.Component {
 
     render() {
         return (
-            <table className="highlight">
-                <thead>
-                    <tr>
-                        <th className="rowTableActive" onClick={this.sortTable('champions')}>Champion</th>
-                        <th className="rowTableActive" onClick={this.sortTable('origins')}>Origin</th>
-                        <th className="rowTableActive" onClick={this.sortTable('classes')}>Class</th>
-                    </tr>
-                </thead>
+            <div className="container">
+                <table className="highlight">
+                    <thead>
+                        <tr>
+                            <th className="rowTableActive" onClick={this.sortTable('champions')}>Champion</th>
+                            <th className="rowTableActive" onClick={this.sortTable('origins')}>Origin</th>
+                            <th className="rowTableActive" onClick={this.sortTable('classes')}>Class</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                { this.state.championData.map(champ => <Champion champion={champ[1]} 
-                                                            key={champ[1].key}
-                                                            />) }
-                </tbody>
-            </table>
+                    <tbody>
+                    { this.state.championData.map(champ => <Champion champion={champ[1]} 
+                                                                key={champ[1].id}
+                                                                />) }
+                    </tbody>
+                </table>
+            </div>
         );
     }
 
