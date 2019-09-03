@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "babfe47bb02876c3a9d306462eeaf3c7",
+    "revision": "107d639c7be5071df89826c8f4eb1077",
     "url": "/tft-react-app/index.html"
   },
   {
-    "revision": "6596500471b9f7f22d87",
+    "revision": "ab75adc788ad92c07257",
     "url": "/tft-react-app/static/css/main.2f78b3a0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tft-react-app/static/js/2.76effcee.chunk.js"
   },
   {
-    "revision": "6596500471b9f7f22d87",
-    "url": "/tft-react-app/static/js/main.8ed15c09.chunk.js"
+    "revision": "ab75adc788ad92c07257",
+    "url": "/tft-react-app/static/js/main.93183c6d.chunk.js"
   },
   {
     "revision": "a07545e9adb398bc582f",
