@@ -2,7 +2,7 @@
   "name": "tft-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://harrynguon.github.io/tft-react-app",
+  "homepage": "http://harrynguon.github.io/TFT-React-App",
   "dependencies": {
     "axios": "^0.19.0",
     "react": "^16.9.0",
