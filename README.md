@@ -7,4 +7,4 @@
                 <p className="flow-text">You can click on a champion to view detailed statistics about them.</p>
                 <p className="flow-text">All data is pulled from the Riot Games API via a GET request.</p>
 
-Live link: https://harrynguon.github.io/TFT-React-App/
+Try it out: https://harrynguon.github.io/TFT-React-App/
