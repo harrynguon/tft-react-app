@@ -1,4 +1,4 @@
-##TFT-React-App
+# TFT-React-App
 
 <p className="flow-text">This is a very basic React+Redux Web Application that retrieves and displays 
                 data for all champions in Teamfight Tactics.</p>
