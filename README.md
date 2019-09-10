@@ -5,6 +5,6 @@
                 <p className="flow-text">Redux is used to store the data that gets retrieved in the application. The application then uses the Redux store to retrieve the data.</p>
                 <p className="flow-text">In the homepage is the table of all the champions in Teamfight Tactics.</p>
                 <p className="flow-text">You can click on a champion to view detailed statistics about them.</p>
-                <p className="flow-text">All data is pulled from the Riot Games API.</p>
+                <p className="flow-text">All data is pulled from the Riot Games API via a GET request.</p>
 
 Live link: https://harrynguon.github.io/TFT-React-App/
