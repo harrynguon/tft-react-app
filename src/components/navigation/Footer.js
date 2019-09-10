@@ -9,7 +9,6 @@ const Footer = () => {
             </div>
         </div>
         <div className="section grey darken-1 no-padding">
-        <div className="center grey-text text-lighten-2">Copyright © 2019 Harry Nguon</div>
         </div>
     </footer>
   );

@@ -83,6 +83,8 @@ const ChampionInfo = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="section"></div>
+            <div className="section"></div>
         </div>
     );
 }
